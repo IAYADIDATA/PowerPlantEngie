@@ -73,11 +73,11 @@ def calculate(payload):
                     "p": 0
                 }
                 result.append(item)
-            return result
-        except:
-            response = {
-                'status_code': 500,
-                'status': 'Internal Server Error'
-            }
-            return response
+        return result
+    except Exception as ex:
+        response = {
+            'status_code': 500,
+            'status': 'Internal Server Error'
+        }
+        return response
         
