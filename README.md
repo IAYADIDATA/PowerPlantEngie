@@ -10,7 +10,7 @@ To expose api in port :8888 please follow the setps:
      (example: python3 -m venv venv | source venv/bin/activate)
      PS: You should use python version >= 3.8
    - Install required packages: pip install -r requirements.txt
-   - Run the following command: python app.py
+   - Run the following command: python app.py or flask run --port=8888
    - To call the api endpoint please use a post http call to http://127.0.0.1:8888/productionplan
    
 ### *Algorithm explanation*
