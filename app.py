@@ -6,9 +6,7 @@ app = Flask(__name__)
 
 @app.route(rule="/productionplan", methods=['POST'])
 def post_api():
-    # payload = request.json
-    file = open('files/payload3.json')
-    payload = json.load(file)
+    payload = request.json
     load = payload["load"]
     fuels = payload["fuels"]
     co2 = fuels["co2(euro/ton)"]
