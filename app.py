@@ -1,5 +1,4 @@
 from flask import Flask, request
-import json
 from src import calculate
 
 app = Flask(__name__)
